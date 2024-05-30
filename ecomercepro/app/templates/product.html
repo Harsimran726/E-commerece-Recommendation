@@ -1,0 +1,789 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>All Is Here</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+
+        body{
+            background-color: #f5f5f5;
+        }
+        nav.navbar{
+            background-color: whitesmoke;
+            max-width: 100%;
+        }
+        nav.navbar div.collapse {
+            max-width: 90%;
+            background-color: rgba(127, 255, 212, 0.175);
+            border-radius: 20px;
+            padding-left: 10px;
+            filter: drop-shadow(10px);
+        }
+        nav.navbar div.collapse ul li  {
+
+        }
+        nav.navbar div.collapse ul li a.nav-link{
+            color: steelblue;
+        }
+        nav.navbar div.collapse ul{
+                margin: auto;
+            }
+        nav.navbar div.collapse {
+            margin: auto;
+        }
+        nav.navbar div.collapse ul li a.nav-link:hover{
+            color: rgb(3, 69, 236);
+            transform: scale(1.1);
+            transition: all 0.4s ease-out;
+            
+        }
+
+
+    
+
+        @import url("https://fonts.googleapis.com/css2?family=Noto+Serif+Display:wght@300&family=Rubik:wght@400;500;700&display=swap");
+
+:root {
+  --light: #ffffff;
+  --dark: #000;
+}
+body {
+  font-family: "Rubik", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+h3 {
+  font-family: "Noto Serif Display", serif;
+  font-size: 2.3rem;
+  font-weight: 300;
+  text-align: center;
+}
+a {
+  text-decoration: none;
+  color: var(--dark);
+  font-weight: 400;
+  transition: 0.3s ease-in;
+  border-bottom: 1px solid transparent;
+  margin-bottom: 0.5rem;
+  display: inline-flex;
+}
+a:hover {
+  border-bottom: 1px solid var(--dark);
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+button {
+  appearance: none;
+  border: 0;
+  background: transparent;
+}
+.flex {
+  display: flex;
+}
+.footer_video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  overflow: hidden;
+  border: none;
+}
+.footer_inner {
+  background: var(--light);
+  backdrop-filter: blur(50px);
+  border: 0.1px solid rgba(233, 232, 232, 0.208);
+  border-radius: 5px;
+  padding: 2rem;
+  margin: 1rem 0;
+}
+.footer {
+  position: relative;
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+}
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+form {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: min(100%, 400px);
+  border-bottom: 1px solid var(--dark);
+}
+
+input {
+  padding: 0.75rem 0;
+  border: none;
+  background: none;
+  font-weight: 500;
+  transition: border 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
+  border-radius: 0;
+  width: 100%;
+  font-size: 1.05rem;
+  font-weight: bolder;
+}
+input:focus {
+  outline: none;
+}
+input::placeholder {
+  color: var(--dark);
+}
+@media (min-width: 675px) {
+  .layout {
+    display: flex;
+    flex-wrap: nowrap;
+    column-gap: 2rem;
+  }
+  .w-50 {
+    width: 50%;
+  }
+  .w-25 {
+    width: 25%;
+  }
+}
+form {
+  position: relative;
+}
+svg {
+  margin: 0.5rem;
+}
+.c-2 {
+  margin-top: 3.5rem;
+}
+.footer_copyright {
+  color: var(--light);
+}
+
+section.product{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+section.product div.pimg{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section.product div.pimg img {
+    width: 600px;
+}
+section.product div.pdet {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 4%;
+}
+section.product div.pdet h2{
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-top: 20px;
+}
+section.product div.pdet p {
+    font-size: 1rem;
+    font-weight: 300;
+    margin-top: 10px;
+}
+section.product div.pdet h3{
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-top: 20px;
+}
+section.product div.pdet span{
+    font-size: 1rem;
+    font-weight: 300;
+    font-style: italic;
+}
+section.product div.pdet div.size{
+    margin-top: 20px;
+}
+section.product div.pdet div.size h4{
+    font-size: 1.2rem;
+    font-weight:700;
+    margin-top: 10px;
+}
+section.product div.pdet div.size form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+section.product div.pdet div.size form select{
+    padding: 10px;
+    margin-right: 10px;
+}
+section.product div.pdet div.size form input{
+    padding: 10px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+section.product div.pdet div.des{
+    margin-top: 20px;
+    padding-right: 3%;
+}
+section.product div.pdet div.des h4{
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-top: 10px;
+
+}
+section.product div.pdet div.des p{
+    font-size: 1rem;
+    font-weight: 300;
+    margin-top: 10px;
+}
+section.product div.pdet div.review{
+    margin-top: 20px;
+}
+section.product div.pdet div.review h4{
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-top: 10px;
+}
+section.product div.pdet div.review p{
+    font-size: 1rem;
+    font-weight: 300;
+    margin-top: 10px;
+}
+
+section.recom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column ;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+section.recom div.prodrec{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:row ;
+    width: 100%;
+    height: 100%;
+    padding: 4%;
+}
+section.recom div.prodrec div.img{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section.recom div.prodrec div.img img{
+    width: 300px;
+}
+section.recom div.prodrec div.img img:hover{
+    transform: scale(1.2);
+    transition: all 0.4s ease-in-out;
+
+}
+section.recom div.prodrec div.det{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 4%;
+}
+section.recom div.prodrec div.det span{
+    font-size: 1rem;
+    font-weight: 300;
+    font-style: italic;
+}
+section.recom div.prodrec div.det h3{
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-top: 20px;
+}
+section.recom div.prodrec div.det p{
+    font-size: 1rem;
+    font-weight: 300;
+    margin-top: 10px;
+}
+section.recom div.prodrec div.det form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+section.recom div.prodrec div.det form button{
+    padding: 10px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+section.recom div.prodrec div.det form button span{
+    font-size: 1rem;
+    font-weight: 300;
+    font-style: italic;
+}
+section.recom div.prodrec div.det form button span:hover{
+    font-weight: 700;
+}
+section.recom div.prodrec div.det form button:hover{
+    background-color: #fff;
+    color: #000;
+}
+section.recom div.prodrec div.det form button:hover span{
+    font-weight: 700;
+}
+section.recom div.prodrec div.det form button:hover span{
+    font-weight: 700;
+}
+
+section.recom div.prodrec h4{
+    font-size: 1.2rem;
+    font-weight: 200;
+    margin-top: 10px;
+    font-style: oblique;
+}
+
+div.bags {
+  width: 300px;
+    position: fixed;
+    right: 40px;
+    z-index: 2343432;
+    top: 70px;
+    height: 80%;
+    display: flex;
+    background-color: #4682b4ba;
+}
+
+div.bags div.b{
+  width: 90%;
+    margin: auto;
+    height: 95%;
+    display: flex;
+    flex-direction: column;
+    padding: 2%;
+    overflow-y: auto;
+    background-color: steelblue;
+}
+div.bags div.b div.prd{
+  width: 90%;
+    height: 50%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    margin: 3%;
+}
+div.bags div.b div.prd div.img {
+  width: 50%;
+    height: 100%;
+    margin: auto;
+}
+div.bags div.b div.prd div.img img {
+  width: 100%;
+    margin: auto;
+}
+div.bags div.b div.prd div.dtp {
+  width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 2%;
+}
+div.bags div.b div.prd div.dtp h3{
+font-size: larger;
+}
+div.bags div.b div.prd div.dtp p{
+font-size: small;
+}
+div.bags div.b div.prd div.dtp h4{
+font-size: medium;
+}
+button#toggleButton {
+  position: fixed;
+    right: 40px;
+    bottom:18px;
+    z-index: 2343432;
+    background-color: steelblue;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+    </style>
+
+</head>
+  <body>
+    <nav class="navbar navbar-expand-lg ">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+            <a class="navbar-brand" href="#">All is here</a>
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/Home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active " href="#">Products</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active " href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active " href="#">Contact</a>
+              </li>
+              
+            </ul>
+
+          </div>
+        </div>
+      </nav>
+
+
+      <section class="product">
+        <div class="pimg">
+            {% load static %}
+            <img src="{{prod.image_url}}" alt="">
+        </div>
+        <div class="pdet">
+            <h2>{{prod.name}}</h2>
+            <p>{{prod.category}}</p>
+            <h3>Price : ${{prod.price}}</h3>
+            <span>Include All Taxes</span>
+            <div class="size">
+                <h4>Size</h4>
+                <form action="/addtobag" method="post">
+                    {% csrf_token %}
+                <select name="Size">
+                    <option value="UK-6">UK-6</option>
+                    <option value="UK-7">UK-7</option>
+                    <option value="UK-8">UK-8</option>
+                    <option value="UK-9">UK-9</option>
+                    <option value="UK-10">UK-10</option>
+                </select>
+                <input type="hidden" name="p_id" value="{{prod.p_id}}">
+                <input type="submit" value="Add to Bag">
+                </form>
+            </div>
+            <div class="des">
+                <h4>Description</h4>
+                <p>{{prod.description}}</p>
+                <h4>Deliver Returns</h4>
+                <p>All purchases are subject to delivery fees.
+
+                    Standard delivery 4–9 business days
+                    Orders are processed and delivered Monday–Friday (excluding public holidays)
+                    
+                    Nike Members enjoy free returns</p>
+                
+            </div>
+            <div class="review">
+                <h4>Reviews</h4>
+                <p>{{prod.rating}}/5</p>
+            </div>
+        </div>
+      </section>    
+
+      <hr><hr>
+      <section class="recom">
+        {% for prods in simi_pro %}
+        <div class="prodrec" onclick="window.location.href='/{{ prods.p_id }}'" >
+            <div class="img">
+                <img src="{{prods.image_url}}" alt="">
+            </div>
+            <div class="det">
+                <span>{{prods.p_id}}</span>
+                <h3>{{prods.name}}</h3>
+                <p>Price : ${{prods.price}}</p>
+                <p>{{prods.description}}</p>
+                <form action="/save_like" method="post">
+                    {% csrf_token %}
+                    <input type="hidden" name="p_id" value="{{prods.p_id}}">
+                    <button type="submit">
+                
+                        <span class="material-symbols-outlined">
+                            favorite
+                            </span>
+                    </button>
+                </form>
+                <h4>Review : {{prods.rating}} out of 5</h4>
+            </div>
+        </div>
+        {% endfor %}
+      </section>
+
+  
+      <footer class="footer">
+        <video class="footer_video" muted="" loop="" autoplay src="//cdn.shopify.com/s/files/1/0526/6905/5172/t/5/assets/footer.mp4?v=29581141968431347981633714450" type="video/mp4">
+        </video>
+      
+        <div class="container">
+          <div class="footer_inner">
+            <div class="c-footer">
+              <div class="layout">
+                <div class="layout_item w-50">
+                  <div class="newsletter">
+                    <h3 class="newsletter_title">Get updates on fun stuff you probably want to know about in your inbox.</h3>
+                    
+                  </div>
+                </div>
+      
+                <div class="layout_item w-25">
+                  <nav class="c-nav-tool">
+                    <h4 class="c-nav-tool_title">Menu</h4>
+                    <ul class="c-nav-tool_list">
+                      <li>
+                        <a href="/collections/all" class="c-link">Shop All</a>
+                      </li>
+      
+                      <li>
+                        <a href="/pages/about-us" class="c-link">About Us</a>
+                      </li>
+      
+                      <li>
+                        <a href="/blogs/community" class="c-link">Community</a>
+                      </li>
+                      <li>
+                        <a href="#" class="c-link">Vibes</a>
+                      </li>
+                    </ul>
+                  </nav>
+      
+                </div>
+      
+                <div class="layout_item w-25">
+                  <nav class="c-nav-tool">
+                    <h4 class="c-nav-tool_title">Support</h4>
+                    <ul class="c-nav-tool_list">
+      
+                      <li class="c-nav-tool_item">
+                        <a href="/pages/shipping-returns" class="c-link">Shipping &amp; Returns</a>
+                      </li>
+      
+                      <li class="c-nav-tool_item">
+                        <a href="/pages/help" class="c-link">Help &amp; FAQ</a>
+                      </li>
+      
+                      <li class="c-nav-tool_item">
+                        <a href="/pages/terms-conditions" class="c-link">Terms &amp; Conditions</a>
+                      </li>
+      
+                      <li class="c-nav-tool_item">
+                        <a href="/pages/privacy-policy" class="c-link">Privacy Policy</a>
+                      </li>
+      
+                      <li class="c-nav-tool_item">
+                        <a href="/pages/contact" class="c-link">Contact</a>
+                      </li>
+      
+                     
+                    </ul>
+                  </nav>
+      
+                </div>
+              </div>
+              <div class="layout c-2">
+                <div class="layout_item w-50">
+                  <ul class="flex">
+                    <li>
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32">
+                        <path fill="none" d="M0 0h24v24H0z" />
+                        <path d="M12 6.654a6.786 6.786 0 0 1 2.596 5.344A6.786 6.786 0 0 1 12 17.34a6.786 6.786 0 0 1-2.596-5.343A6.786 6.786 0 0 1 12 6.654zm-.87-.582A7.783 7.783 0 0 0 8.4 12a7.783 7.783 0 0 0 2.728 5.926 6.798 6.798 0 1 1 .003-11.854zm1.742 11.854A7.783 7.783 0 0 0 15.6 12a7.783 7.783 0 0 0-2.73-5.928 6.798 6.798 0 1 1 .003 11.854z" />
+                      </svg>
+                    </li>
+                    <li>
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32">
+                        <path fill="none" d="M0 0h24v24H0z" />
+                        <path d="M1 4h22v2H1V4zm0 14h22v2H1v-2zm18.622-3.086l-.174-.87h-1.949l-.31.863-1.562.003c1.005-2.406 1.75-4.19 2.236-5.348.127-.303.353-.457.685-.455.254.002.669.002 1.245 0L21 14.912l-1.378.003zm-1.684-2.062h1.256l-.47-2.18-.786 2.18zM7.872 9.106l1.57.002-2.427 5.806-1.59-.001c-.537-2.07-.932-3.606-1.184-4.605-.077-.307-.23-.521-.526-.622-.263-.09-.701-.23-1.315-.419v-.16h2.509c.434 0 .687.21.769.64l.62 3.289 1.574-3.93zm3.727.002l-1.24 5.805-1.495-.002 1.24-5.805 1.495.002zM14.631 9c.446 0 1.01.138 1.334.267l-.262 1.204c-.293-.118-.775-.277-1.18-.27-.59.009-.954.256-.954.493 0 .384.632.578 1.284.999.743.48.84.91.831 1.378-.01.971-.831 1.929-2.564 1.929-.791-.012-1.076-.078-1.72-.306l.272-1.256c.656.274.935.361 1.495.361.515 0 .956-.207.96-.568.002-.257-.155-.384-.732-.702-.577-.317-1.385-.756-1.375-1.64C12.033 9.759 13.107 9 14.63 9z" />
+                      </svg>
+                    </li>
+                    <li>
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32">
+                        <path fill="none" d="M0 0h24v24H0z" />
+                        <path d="M15 17a7.5 7.5 0 1 1 0-15 7.5 7.5 0 0 1 0 15zM2 2h4v20H2V2z" />
+                      </svg>
+                    </li>
+                    <li>
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32">
+                        <path fill="none" d="M0 0h24v24H0z" />
+                        <path d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm-1-6v2h2v-2h1a2.5 2.5 0 0 0 2-4 2.5 2.5 0 0 0-2-4h-1V6h-2v2H8v8h3zm-1-3h4a.5.5 0 1 1 0 1h-4v-1zm0-3h4a.5.5 0 1 1 0 1h-4v-1z" />
+                      </svg>
+                    </li>
+                    <li>
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32">
+                        <path fill="none" d="M0 0h24v24H0z" />
+                        <path d="M20.067 8.478c.492.88.556 2.014.3 3.327-.74 3.806-3.276 5.12-6.514 5.12h-.5a.805.805 0 0 0-.794.68l-.04.22-.63 3.993-.032.17a.804.804 0 0 1-.794.679H7.72a.483.483 0 0 1-.477-.558L7.418 21h1.518l.95-6.02h1.385c4.678 0 7.75-2.203 8.796-6.502zm-2.96-5.09c.762.868.983 1.81.752 3.285-.019.123-.04.24-.062.36-.735 3.773-3.089 5.446-6.956 5.446H8.957c-.63 0-1.174.414-1.354 1.002l-.014-.002-.93 5.894H3.121a.051.051 0 0 1-.05-.06l2.598-16.51A.95.95 0 0 1 6.607 2h5.976c2.183 0 3.716.469 4.523 1.388z" />
+                      </svg>
+                    </li>
+                  </ul>
+                </div>
+                <div class="layout_item w-25">
+                  <ul class="flex">
+                    <li>
+                      <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32">
+                          <path fill="none" d="M0 0h24v24H0z" />
+                          <path d="M12 2C6.477 2 2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.879V14.89h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.989C18.343 21.129 22 16.99 22 12c0-5.523-4.477-10-10-10z" />
+                        </svg>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32">
+                          <path fill="none" d="M0 0h24v24H0z" />
+                          <path d="M22.162 5.656a8.384 8.384 0 0 1-2.402.658A4.196 4.196 0 0 0 21.6 4c-.82.488-1.719.83-2.656 1.015a4.182 4.182 0 0 0-7.126 3.814 11.874 11.874 0 0 1-8.62-4.37 4.168 4.168 0 0 0-.566 2.103c0 1.45.738 2.731 1.86 3.481a4.168 4.168 0 0 1-1.894-.523v.052a4.185 4.185 0 0 0 3.355 4.101 4.21 4.21 0 0 1-1.89.072A4.185 4.185 0 0 0 7.97 16.65a8.394 8.394 0 0 1-6.191 1.732 11.83 11.83 0 0 0 6.41 1.88c7.693 0 11.9-6.373 11.9-11.9 0-.18-.005-.362-.013-.54a8.496 8.496 0 0 0 2.087-2.165z" />
+                        </svg>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32">
+                          <path fill="none" d="M0 0h24v24H0z" />
+                          <path d="M12 2c2.717 0 3.056.01 4.122.06 1.065.05 1.79.217 2.428.465.66.254 1.216.598 1.772 1.153a4.908 4.908 0 0 1 1.153 1.772c.247.637.415 1.363.465 2.428.047 1.066.06 1.405.06 4.122 0 2.717-.01 3.056-.06 4.122-.05 1.065-.218 1.79-.465 2.428a4.883 4.883 0 0 1-1.153 1.772 4.915 4.915 0 0 1-1.772 1.153c-.637.247-1.363.415-2.428.465-1.066.047-1.405.06-4.122.06-2.717 0-3.056-.01-4.122-.06-1.065-.05-1.79-.218-2.428-.465a4.89 4.89 0 0 1-1.772-1.153 4.904 4.904 0 0 1-1.153-1.772c-.248-.637-.415-1.363-.465-2.428C2.013 15.056 2 14.717 2 12c0-2.717.01-3.056.06-4.122.05-1.066.217-1.79.465-2.428a4.88 4.88 0 0 1 1.153-1.772A4.897 4.897 0 0 1 5.45 2.525c.638-.248 1.362-.415 2.428-.465C8.944 2.013 9.283 2 12 2zm0 5a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm6.5-.25a1.25 1.25 0 0 0-2.5 0 1.25 1.25 0 0 0 2.5 0zM12 9a3 3 0 1 1 0 6 3 3 0 0 1 0-6z" />
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="layout_item w-25" style="display:flex;justify-content: end;align-items: center;">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="36" height="36">
+                    <path fill="none" d="M0 0h24v24H0z" />
+                    <path d="M12 2c5.52 0 10 4.48 10 10s-4.48 10-10 10S2 17.52 2 12 6.48 2 12 2zm1 10h3l-4-4-4 4h3v4h2v-4z" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer_copyright">
+            <p>&copy; 2024 The ALL IS HERE Inc.</p>
+          </div>
+        </div>
+      </footer>
+
+      <script>
+   
+
+   var startTime = new Date().getTime();
+
+    // When the user leaves the page, calculate the time spent
+    window.onbeforeunload = function() {
+        var endTime = new Date().getTime();
+        var timeSpent = (endTime - startTime) / 1000;  // Time in seconds
+
+        // Send the timeSpent to the server using an AJAX request
+        var xhr = new XMLHttpRequest();
+        xhr.open("POST", "{% url 'save_time_spent' %}", true);
+        xhr.setRequestHeader("X-CSRFToken", "{{ csrf_token }}");
+        xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+        xhr.send("product_id={{ prod.p_id }}&time_spent=" + timeSpent);
+    }
+
+    // Call the function with the product ID when the page loads
+    window.addEventListener('load', function() {
+        var productId = '{{ prod.p_id }}';  // Assuming prod contains the product object with an 'id' attribute
+        setProductCookie(productId);
+    });
+
+    // AJAX request to add item to bag
+    function addToBag() {
+        var size = document.getElementById('Size').value;
+        var p_id = document.getElementById('p_id').value;
+        fetch('/addtobag/', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                'X-CSRFToken': getCookie('csrftoken')  // Include CSRF token for POST requests
+            },
+            body: JSON.stringify({ Size: size, p_id: p_id })
+        })
+        .then(response => response.json())
+        .then(data => {
+            // Redirect the user to the specified URL
+            window.location.href = data.redirect_url;
+        })
+        .catch(error => {
+            console.error('Error adding to bag:', error);
+        });
+    }
+
+    // Function to get CSRF token from cookies
+    function getCookie(name) {
+        var cookieValue = null;
+        if (document.cookie && document.cookie !== '') {
+            var cookies = document.cookie.split(';');
+            for (var i = 0; i < cookies.length; i++) {
+                var cookie = cookies[i].trim();
+                if (cookie.substring(0, name.length + 1) === (name + '=')) {
+                    cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+                    break;
+                }
+            }
+        }
+        return cookieValue;
+    }
+    </script>
+    
+    <button id="toggleButton">Close Bag</button>
+    <div class="bags" id="bags">
+      <div class="b">
+        {% if products %}
+
+        {% for bags in products %}
+      <div class="prd" onclick="window.location.href='/{{ bags.p_id }}'" >
+        <div class="img">
+            <img src="{{bags.image_url}}" alt="">
+        </div>
+        <div class="dtp">
+            <h3>{{bags.name}}</h3>
+            <p>{{bags.description | truncatewords:18}}</p>
+            <h4>Price : ${{bags.price}}</h4>
+
+        </div>
+    </div>
+    {% endfor %}
+    {% endif %}
+      
+
+      </div>
+
+    </div>
+
+    <script>
+        const toggleButton = document.getElementById('toggleButton');
+const bagsDiv = document.getElementById('bags');
+
+toggleButton.addEventListener('click', () => {
+  if (bagsDiv.style.display === 'none') {
+    bagsDiv.style.display = 'block';
+    toggleButton.textContent = 'Close Bag';
+  } else {
+    bagsDiv.style.display = 'none';
+    toggleButton.textContent = 'See Bag';
+  }
+});
+  </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>
