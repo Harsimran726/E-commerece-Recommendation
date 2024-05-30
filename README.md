@@ -1,13 +1,19 @@
 <h1>E-commerce Product Recommendation System: Content-Based Filtering</h1>
+<br>
 This repository implements a simple yet effective product recommendation system for an e-commerce website. It utilizes a content-based filtering algorithm to suggest products similar to those a user has interacted with in the past.
+<br>
 Features
 Content-Based Filtering: Leverages product descriptions, names, and user activity (likes, views, adding to bag, time spent) to create recommendations.
 TF-IDF Vectorization: Converts product features and user activity data into numerical representations using TF-IDF, allowing for efficient similarity calculations.
 Cosine Similarity: Calculates the cosine similarity between user interaction profiles and product vectors to identify related items.
 Prioritization of Added-to-Bag Products: Gives extra weight to products that have been added to the user's bag, indicating stronger interest.
+<br>
+
 Implementation
+
 The recommendation system is implemented using Django, a popular Python framework for building web applications. The core functionality is contained within the recommend_products view, which retrieves user activity and uses the get_product_recommendations function to generate personalized suggestions.
 Installation and Setup
+
 Install Dependencies:
 pip install -r requirements.txt
 Use code with caution.
